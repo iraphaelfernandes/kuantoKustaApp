@@ -1,0 +1,45 @@
+import {
+  HeroContainer,
+  HeroContent,
+  HeroTitle,
+  BenefitsContainer,
+} from './styles'
+
+import heroImage from '../../../../assets/hero-image.png'
+import { RegularText } from '../../../../components/Typography'
+import { InfoWithIcon } from '../../../../components/InfoWithIcon'
+import { ShoppingCart, Package, Timer, Coffee } from 'phosphor-react'
+import { useTheme } from 'styled-components'
+
+export function Hero() {
+  const { colors } = useTheme()
+
+  return (
+    <HeroContainer>
+      <HeroContent className="container">
+        <div>
+          <section>
+            <HeroTitle size="xl">
+              %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            </HeroTitle>
+            <RegularText size="l" color="subtitle" as="h3">
+             ******************************
+            </RegularText>
+          </section>
+
+          <BenefitsContainer>
+            <InfoWithIcon
+              iconColor={colors['brand-yellow-dark']}
+              icon={<ShoppingCart weight="fill" />}
+              text="Simple and secure purchase"
+            />
+          </BenefitsContainer>
+        </div>
+
+        <div className="imageContainer">
+          <img src={heroImage} alt="" />
+        </div>
+      </HeroContent>
+    </HeroContainer>
+  )
+}
