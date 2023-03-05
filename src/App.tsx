@@ -1,20 +1,31 @@
-import { BrowserRouter } from 'react-router-dom'
-import { ThemeProvider } from 'styled-components'
-import { CartContextProvider } from './contexts/CartContext'
-import { Router } from './Router'
-import { GlobalStyle } from './styles/global'
-import { defaultTheme } from './styles/themes/default'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-export function App() {
+// importing pages
+import Shop from "./pages/Shop";
+import Cart from "./pages/Cart";
+import Error from "./pages/Error";
+import ProductDetail from "./pages/ProductDetail";
+
+// importing components
+import Navbar from "./components/Navbar";
+
+
+function App() {
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <GlobalStyle />
-
-      <BrowserRouter>
-        <CartContextProvider>
-          <Router />
-        </CartContextProvider>
-      </BrowserRouter>
-    </ThemeProvider>
-  )
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="*" element={<Error />} />
+          <Route index element={<Shop />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route  path="/shop/:category/:productID" element={<ProductDetail />}/>
+        </Routes>
+        {/* <Footer /> */}
+      </Router>
+    </>
+  );
 }
+
+export default App;
