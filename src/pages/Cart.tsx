@@ -14,10 +14,9 @@ export default function Cart() {
   const totalValuePurchase: number = subtotals.reduce((a, b) => a + b, 0);
 
  
-
+  const newSubtotals = [...subtotals];
+  
   const updateSubtotal = (index: number, value: number) => {
-
-    const newSubtotals = [...subtotals];
 
     newSubtotals[index] = value;
     console.log( 'newSubtotals',newSubtotals)
@@ -33,7 +32,7 @@ export default function Cart() {
   useEffect(() => {
     setLoading(!loading);
   }, []);
-  
+
  console.log('-> Cart Items',cartItems)
   return (
     <>
