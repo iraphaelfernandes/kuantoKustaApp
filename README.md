@@ -1,9 +1,10 @@
 1. Project's Title
-Kuanto Kusta App
+
+  Kuanto Kusta App
 
 2. Project Description
 
-This project simulates an ecommerce, with products being requested via API.
+  This project simulates an ecommerce, with products being requested via API.
 
 3. Technologies used in the project:
 
@@ -11,16 +12,21 @@ This project simulates an ecommerce, with products being requested via API.
 
 
 4. How to Install and Run the Project
+
  Clone the project:
+ 
  git clone https://github.com/iraphaelfernandes/kuantoKustaApp.git
 
  Enter in the folder:
+
  cd kuantoKustaApp
 
  Install dependencies:
+
  yarn install
 
  Run the project:
+
  yarn start
 
  Open the project in http://localhost:3000 URL
