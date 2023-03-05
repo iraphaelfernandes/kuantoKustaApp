@@ -33,6 +33,7 @@ export default function Cart() {
   useEffect(() => {
     setLoading(!loading);
   }, []);
+  
  console.log('-> Cart Items',cartItems)
   return (
     <>
