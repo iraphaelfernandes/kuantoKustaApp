@@ -20,6 +20,7 @@ export default function ProductCard({
   discountPercentage,
 }: productCardPropType) {
   const [isFav, setFav] = useState<Boolean>(false);
+  
   const dispatch = useDispatch();
   return (
     <div className="w-full md:w-400 p-2 my-2">
@@ -38,10 +39,10 @@ export default function ProductCard({
             </h1>
           </div>
           <div className="p-2 text-right">
-            <div className="text-logogreen font-semibold text-lg font-poppins">
+            {/* <div className="text-logogreen font-semibold text-lg font-poppins">
               ${(price - (discountPercentage * price) / 100).toFixed(2)}
-            </div>
-            <div className="text-md text-gray-500 line-through font-poppins">
+            </div> */}
+            <div className="text-md text-green-700 font-poppins">
               ${price}
             </div>
           </div>

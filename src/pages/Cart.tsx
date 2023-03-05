@@ -64,7 +64,7 @@ export default function Cart() {
                         })}
                       </div>
                       <div className="flex justify-between items-center mt-6 pt-6 border-t">
-                        <Link to="/shop">
+                        <Link to="/">
                           <div className="flex items-center">
                             {" "}
                             <img src="https://img.icons8.com/material-sharp/24/000000/chevron-left.png" />
