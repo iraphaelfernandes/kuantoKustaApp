@@ -30,7 +30,7 @@ export default function Error() {
         </p>
 
         <Link to="/">
-          <button className="w-full lg:w-auto my-4 border rounded-md px-1 sm:px-16 py-5 bg-logogreen text-white hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">
+          <button className="w-full lg:w-auto my-4 border rounded-md px-1 sm:px-16 py-5 bg-logogreen text-white hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">
             Go back to Shop Page
           </button>
         </Link>

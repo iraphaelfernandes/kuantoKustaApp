@@ -50,7 +50,7 @@ export default function ProductCard({
           <div className="w-1/2 p-2">
             <Link to={`/shop/category/${id}`}>
               <button
-                className="block w-full bg-logogreen hover:bg-teal-600 border-2 border-logogreen hover:border-teal-600 px-3 py-2 rounded uppercase font-poppins font-medium"
+                className="block w-full bg-logogreen hover:bg-yellow-500 border-2 border-logogreen hover:border-teal-600 px-3 py-2 rounded uppercase font-poppins font-medium"
                 style={{ color: "#fff" }}
               >
                 <svg viewBox="0 0 24 24" className="inline w-4 h-4">
