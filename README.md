@@ -7,7 +7,7 @@ This project simulates an ecommerce, with products being requested via API.
 
 3. Technologies used in the project:
 
-[![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1678046040652?alt=media&token=c903fb6f-8cd5-43b8-9069-da3594ed3b22)](https://github.com/msdio/stackticon)
+[![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1678046599906?alt=media&token=5b2c36d1-dd82-46bb-80b7-7cf61b3a5d98)](https://github.com/msdio/stackticon)
 
 
 4. How to Install and Run the Project
