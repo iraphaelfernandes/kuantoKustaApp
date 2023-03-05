@@ -33,7 +33,7 @@ export default function Shop() {
         <title>Kuanto Kusta</title>
         <meta
           name="description"
-          content="Shopsy presents over 1000+ products from popular brands at the never-seen-before price range with 20-days money back guarantee and cash on delivery!"
+          content="Kuanto Kusta"
         />
         <meta
           name="keywords"
