@@ -104,8 +104,8 @@ export default function ProductDetail() {
                 <div className="flex items-center space-x-4 my-4">
                   <div>
                     <div className="rounded-lg bg-gray-100 flex py-2 px-3">
-                      <span className="text-green-500 mr-1 mt-1">$</span>
-                      <span className="font-bold text-green-500 text-3xl">
+                      <span className="text-orange-500 mr-1 mt-1">$</span>
+                      <span className="font-bold text-orange-500 text-3xl">
                         {(
                           product.price -
                           (product.price * product.discountPercentage) / 100
@@ -125,35 +125,7 @@ export default function ProductDetail() {
 
                 <p className="text-gray-500">{product.description}</p>
 
-                <div className="flex py-4 space-x-4">
-                  <div className="relative">
-                    <div className="text-center left-0 pt-2 right-0 absolute block text-xs uppercase text-gray-400 tracking-wide font-semibold">
-                      Qty
-                    </div>
-                    <select
-                      onChange={(e: any) => setQuantity(e.target.value)}
-                      className="cursor-pointer appearance-none rounded-xl border border-gray-200 pl-4 pr-8 h-14 flex items-end pb-1"
-                    >
-                      <option value={1}>1</option>
-                      <option value={2}>2</option>
-                      <option value={3}>3</option>
-                      <option value={4}>4</option>
-                      <option value={5}>5</option>
-                      <option value={6}>6</option>
-                      <option value={7}>7</option>
-                      <option value={8}>8</option>
-                      <option value={9}>9</option>
-                      <option value={10}>10</option>
-                    </select>
-                  </div>
 
-                  <button
-                    type="button"
-                    className="h-14 px-6 py-2 font-semibold rounded-xl bg-logogreen hover:bg-green-500 text-white"
-                  >
-                    Add to Cart
-                  </button>
-                </div>
               </div>
             </div>
           </div>
